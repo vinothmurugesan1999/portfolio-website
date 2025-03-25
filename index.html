@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinoth Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Dynamic Island Navbar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-content">
+                <!-- Logo & Theme Toggle -->
+                <div class="logo">VM</div>
+                <button id="theme-toggle" class="theme-btn">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+                <!-- Mobile Menu Toggle (for mobile only) -->
+                <button class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Home Screen) -->
+    <section id="about" class="section">
+        <div class="content">
+            <!-- Profile Photo Added Here -->
+            <div class="hero-profile">
+                <img src="images/profile.jpg" alt="Profile" />
+            </div>
+            <h1>Hello, I'm <span>Vinoth</span></h1>
+            <p>I am Vinoth Murugesan, a Full Stack Developer skilled in building dynamic and scalable web applications using MongoDB, Express.js, React.js, and Node.js. I specialize in developing full-stack solutions with a focus on performance, usability, and clean code. Continuously learning and improving, I am passionate about creating efficient web applications and contributing to innovative projects.</p>
+            <!-- Download CV Button Moved Here -->
+            <a href="./cv.pdf" download class="btn">Download CV</a>
+            <div class="social-media">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><h3><i class="fa-brands fa-html5"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-css3"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-js"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-react"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-bootstrap"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-github"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-node"></i></h3></div>
+            <div class="skill-card"><h3>ex</h3></div>
+            <div class="skill-card"><h3><i class="fa-solid fa-database"></i></h3></div>
+            <div class="skill-card"><h3><i class="fa-brands fa-java"></i></h3></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./images/wheather_application.png" alt="wheather_application">
+                <h3>weather application</h3>
+                <p>A responsive weather application built with HTML, CSS, and JavaScript that fetches real-time weather data using the OpenWeather API and displays it dynamically based on user input.</p>
+                <p><a href="https://vinothmurugesan1999.github.io/weather_app/">Live link <i class="fa-solid fa-link"></i></a></p>
+            </div>
+            <div class="project-card">
+                <img src="./images/to_do_list.png" alt="to_do_list">
+                <h3>Project Two</h3>
+                <p>A responsive To-Do application built with React that allows users to add, edit, delete, and reorder tasks using move up and move down functionality for better task management.</p>
+                <p><a href="https://todo-vinothm.netlify.app/">Live link <i class="fa-solid fa-link"></i></a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+  
+<form id="contact-form" action="https://formsubmit.co/vinothmurugesan2051999" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
